@@ -4,6 +4,12 @@
 body {
 	/*margin:0 auto;
 	max-width: 960px;*/
+	background-color: #f8f9fa;
+}
+
+header {
+	height: 70px;
+	background-color: #212529;
 }
 
 .masthead {
@@ -62,21 +68,24 @@ p {
 	font-size: 14px;
 	text-align: center;
 	color:#B5B5B5;
+	margin: 0;
 }
 
 footer {
 	display:flex;
 	margin:0 auto;
 	justify-content:space-between;
-	max-width: 960px;
-	height:60px;
+	/*max-width: 960px;*/
+	/*height:60px;*/
 	border-top: 2px solid black;
 	padding-bottom: 10px;
+	background-color: #FFFFFF;
 }
 
 #copyright {
 	width:320px;
-	padding: 10px;
+	padding-top:25px;
+	margin-left:auto;
 }
 
 #copyright p {
@@ -92,6 +101,7 @@ footer {
 
 #footer-nav {
 	width:320px;
+	margin-right:auto;
 }
 
 #footer-nav a {
@@ -124,16 +134,17 @@ h2{
 	font-size: 36px;
 	text-align: center;
 	color:#212529;
-	margin-bottom:0;
+	margin-bottom:15px;
 }
 
-h3{
+h3 {
 	font-family: 'Montserrat';
 	font-weight: 700;
 	font-size: 24px;
 	text-align:center;
 	color:#212529;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 section{
@@ -146,15 +157,45 @@ section{
 .h2-sub {
 	display: block;
 	width: 100%;
+	margin-bottom:50px;
 }
 
 .three-column {
 	width: 300px;
-	padding-left: 20px;
-	margin-top: 20px;
+	padding: 10px;
+	/*margin-top: 50px;*/
+	margin-bottom: 30px;
 }
 
 .icons {
 	display: block;
-	margin:0 auto;
+	margin:0 auto 20px;
 }
+
+.team-photos {
+	border-radius: 50%;
+	max-width:200px;
+	display: block;
+	margin:0 auto 20px;
+	border: 8px solid #CCCCCC;
+}
+
+#team-para {
+	max-width:600px;
+	margin:0 auto 50px;
+}
+
+.portfolio {
+	background-color: #FFFFFF;
+	margin: 10px 10px 10px 10px;
+	padding-bottom:25px;
+}
+
+.portfolio h3 {
+	margin:15px 0 5px;
+}
+
+.portfolio-images {
+	max-width: 300px;
+}
+
