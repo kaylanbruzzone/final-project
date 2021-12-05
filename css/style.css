@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	/*margin:0 auto;
+	max-width: 960px;*/
+}
+
+.masthead {
+ 	min-height: 700px;
+	background-image:url(https://fit-front-end-course.s3.amazonaws.com/header-bg.jpg);
+	background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+header nav {
+	display:flex;
+	margin:0 auto;
+	max-width: 960px;
+}
+
+header nav a {
+	font-family: 'montserrat';
+	font-weight: 300px;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+header nav ul {
+  display:flex;
+  justify-content:flex-end;
+  list-style-type:none;
+	margin-left:auto;
+  /*width: 100%;*/
+}
+
+li {
+	padding:10px 20px;
+}
+
+.masthead div {
+	padding-top: 200px;
+	font-family: 'montserrat';
+	font-weight: 700;
+	font-size: 60px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.masthead div p {
+	font-size: 30px;
+	margin-bottom: 0;
+	color: #FFFFFF;
+}
+
+p {
+	font-family: 'roboto slab';
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	color:#B5B5B5;
+}
+
+footer {
+	display:flex;
+	margin:0 auto;
+	justify-content:space-between;
+	max-width: 960px;
+	height:60px;
+	border-top: 2px solid black;
+	padding-bottom: 10px;
+}
+
+#copyright {
+	width:320px;
+	padding: 10px;
+}
+
+#copyright p {
+	font-family: 'montserrat';
+	font-size:14px;
+	text-align: left;
+	color: #212529;
+}
+
+#footer-social {
+	width: 320px;
+}
+
+#footer-nav {
+	width:320px;
+}
+
+#footer-nav a {
+	font-family: 'montserrat';
+	font-size:14px;
+	text-decoration: none;
+	color: #fed136;
+}
+
+#footer-nav ul {
+  display:flex;
+	justify-content:flex-end;
+  list-style-type:none;
+}
+
+h1{
+	font-family: 'montserrat';
+	font-size: 24px;
+	font-weight: 700;
+	text-transform:uppercase;
+	color: #FED136;
+}
+
+h2{
+	display: block;
+	width: 100%;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 36px;
+	text-align: center;
+	color:#212529;
+	margin-bottom:0;
+}
+
+h3{
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 24px;
+	text-align:center;
+	color:#212529;
+	margin-bottom: 5px;
+}
+
+section{
+	display: flex;
+	flex-wrap:wrap;
+	max-width:960px;
+	margin:50px auto;
+}
+
+.h2-sub {
+	display: block;
+	width: 100%;
+}
+
+.three-column {
+	width: 300px;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.icons {
+	display: block;
+	margin:0 auto;
+}
