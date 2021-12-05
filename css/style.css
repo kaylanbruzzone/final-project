@@ -17,7 +17,6 @@ header {
 	background-image:url(https://fit-front-end-course.s3.amazonaws.com/header-bg.jpg);
 	background-size:cover;
     background-position:center;
-    background-attachment:fixed;
 }
 
 header nav {
@@ -134,7 +133,9 @@ h2{
 	font-size: 36px;
 	text-align: center;
 	color:#212529;
-	margin-bottom:15px;
+	margin:0;
+	padding-top: 50px;
+	padding-bottom:15px;
 }
 
 h3 {
@@ -234,3 +235,47 @@ button {
 .modal_on {
   display:block;
 }
+
+
+main {
+	min-height:700px;
+	background-color: #BDBDBD;
+	background-image:url(https://fit-front-end-course.s3.amazonaws.com/map-image.png)
+}
+
+form {
+	display:flex;
+	width:960px;
+	margin:0 auto;
+}
+
+.left {
+	max-width:460px;
+}
+
+.right {
+	max-width:460px;
+}
+
+input {
+	font-family: 'montserrat';
+	font-weight: 700;
+	color: #cccccc;
+	border:1px solid #cccccc;
+	border-radius:.25rem;
+	/*display:block;*/
+}
+
+.left-form {
+	padding:10px 253px 10px 20px;
+	height: 40px;
+	margin:5px;
+}
+
+.right-form {
+	padding:10px 253px 10px 20px;
+	height: 100px;
+	margin:5px;
+}
+
+
