@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Portfolio</title>
 	
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
@@ -31,40 +32,64 @@
 		<h2>Portfolio</h2>
 		<p class="h2-sub"><em>Lorem ipsum dolor sit amet consectetur.</em></p>
 		
-		<div class="three-column, portfolio">
+		<div class="three-column">
+			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/01-thumbnail.jpg" alt="photo of shirts on hangers" class="portfolio-images">
+			</div>
+			<div class="portfolio">
           <h3>Threads</h3>
 			<p><em>Illustration</em></p>
 		</div>
+		</div>
 		
-		<div class="three-column, portfolio">
+		<div class="three-column">
+			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/02-thumbnail.jpg" alt="person holding a flag on the edge of a cliff" class="portfolio-images">
+			</div>
+			<div class="portfolio">
           <h3>Explore</h3>
 			<p><em>Graphic Design</em></p>
+			</div>
 		</div>
 		
-		<div class="three-column, portfolio">
+		<div class="three-column">
+			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/03-thumbnail.jpg" alt="brand identity elements on a wood table" class="portfolio-images">
+			</div>
+			<div class="portfolio">
           <h3>Finish</h3>
 			<p><em>Identity</em></p>
+			</div>
 		</div>
 		
-		<div class="three-column, portfolio">
+		<div class="three-column">
+			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/04-thumbnail.jpg" alt="image of items spread out on a desk" class="portfolio-images">
+			</div>
+			<div class="portfolio">
           <h3>Lines</h3>
 			<p><em>Branding</em></p>
+			</div>
 		</div>
 		
-		<div class="three-column, portfolio">
+		<div class="three-column">
+			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/05-thumbnail.jpg" alt="laptop, notebook, and glasses on a wooden table" class="portfolio-images">
+			</div>
+			<div class="portfolio">
           <h3>Southwest</h3>
 			<p><em>Website Design</em></p>
+			</div>
 		</div>
 		
-		<div class="three-column, portfolio">
+		<div class="three-column">
+			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/06-thumbnail.jpg" alt="image of someone taking a photo of the Arc de Triomphe" class="portfolio-images">
+			</div>
+			<div class="portfolio">
           <h3>Window</h3>
 			<p><em>Photography</em></p>
+			</div>
 		</div>
 	
 		
@@ -89,6 +114,45 @@
 		</div>
 		
 	</footer>
+	
+	<div id="modal" class="modal">
+ 
+		
+		
+        <h3>Threads</h3>
+		<p><em>Illustration</em></p>
+		<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/01-full.jpg">
+      
+		<button name="close">CLOSE PROJECT</button>
+		
+    </div>
+	
+	<script>
+		
+		//var project = document.getElementsByClassName('image-container')
+		  
+		//project.addEventListener('click',function(){
+		//	console.log('test')
+			
+		//})
+		
+		window.onload = function (){
+		
+		var modal = document.getElementById('modal')
+		var closeBtn = document.getElementsByName('close')
+								
+			modal.classList.add('modal_on')
+		}
+			  
+			  closeBtn[0].addEventListener('click',function (){
+				  modal.classList.remove('modal_on')
+				 
+			  })
+		 
+		
+		
+		
+	</script>
 		
 	
 </body>

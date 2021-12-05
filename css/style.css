@@ -172,6 +172,20 @@ section{
 	margin:0 auto 20px;
 }
 
+button {
+	display:block;
+	margin:20px auto;
+	border-radius:.25rem;
+	font-family: 'montserrat';
+	font-weight: 700;
+	font-size: 16px;
+	height: 60px;
+	padding: 10px 40px 10px 40px;
+	color: #FFFFFF;
+	background-color: #fed136;
+	border:none;
+}
+
 .team-photos {
 	border-radius: 50%;
 	max-width:200px;
@@ -187,15 +201,36 @@ section{
 
 .portfolio {
 	background-color: #FFFFFF;
-	margin: 10px 10px 10px 10px;
-	padding-bottom:25px;
-}
-
-.portfolio h3 {
-	margin:15px 0 5px;
+	padding:10px 0 25px 0;
+	margin-top:0;
 }
 
 .portfolio-images {
 	max-width: 300px;
 }
 
+.image-container {
+	height:225px;
+}
+
+
+
+#modal {
+  position:fixed;
+  width:40%;
+  padding:20px;
+  top:400px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  border-radius:20px;
+  background-color:white;
+  box-shadow:3px 3px 12px gray;
+  text-align:center;
+}
+.modal {
+  display:none;
+}
+.modal_on {
+  display:block;
+}
