@@ -4,9 +4,6 @@
 <meta charset="UTF-8">
 <title>Portfolio</title>
 	
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
@@ -36,13 +33,12 @@
 		
 		<div class="three-column">
 			<div class="image-container">
-				<span class="material-icons">
-add
-</span>
-				<div class="image-hover">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/01-thumbnail.jpg" alt="photo of shirts on hangers" class="portfolio-images">
-				</div>
+			<div class="overlay">
+  			</div>
+				<div class="overlay-text">+</div>
 			</div>
+			
 			<div class="portfolio">
           <h3>Threads</h3>
 			<p><em>Illustration</em></p>
@@ -52,7 +48,11 @@ add
 		<div class="three-column">
 			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/02-thumbnail.jpg" alt="person holding a flag on the edge of a cliff" class="portfolio-images">
+			<div class="overlay">
+  			</div>
+				<div class="overlay-text">+</div>
 			</div>
+			
 			<div class="portfolio">
           <h3>Explore</h3>
 			<p><em>Graphic Design</em></p>
@@ -62,7 +62,11 @@ add
 		<div class="three-column">
 			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/03-thumbnail.jpg" alt="brand identity elements on a wood table" class="portfolio-images">
+			<div class="overlay">
+  			</div>
+				<div class="overlay-text">+</div>
 			</div>
+			
 			<div class="portfolio">
           <h3>Finish</h3>
 			<p><em>Identity</em></p>
@@ -72,7 +76,11 @@ add
 		<div class="three-column">
 			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/04-thumbnail.jpg" alt="image of items spread out on a desk" class="portfolio-images">
+			<div class="overlay">
+  			</div>
+			<div class="overlay-text">+</div>
 			</div>
+			
 			<div class="portfolio">
           <h3>Lines</h3>
 			<p><em>Branding</em></p>
@@ -82,7 +90,11 @@ add
 		<div class="three-column">
 			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/05-thumbnail.jpg" alt="laptop, notebook, and glasses on a wooden table" class="portfolio-images">
+			<div class="overlay">
+  			</div>
+				<div class="overlay-text">+</div>
 			</div>
+			
 			<div class="portfolio">
           <h3>Southwest</h3>
 			<p><em>Website Design</em></p>
@@ -92,7 +104,11 @@ add
 		<div class="three-column">
 			<div class="image-container">
 			<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/06-thumbnail.jpg" alt="image of someone taking a photo of the Arc de Triomphe" class="portfolio-images">
+			<div class="overlay">
+  			</div>
+				<div class="overlay-text">+</div>
 			</div>
+			
 			<div class="portfolio">
           <h3>Window</h3>
 			<p><em>Photography</em></p>
@@ -122,42 +138,131 @@ add
 		
 	</footer>
 	
-<!--
-	<div id="modal" class="modal">
- 
+
+	<div class="modal">
 		
-		
-        <h3>Threads</h3>
+        <h2>Threads</h2>
 		<p><em>Illustration</em></p>
-		<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/01-full.jpg">
-      
-		<button name="close">CLOSE PROJECT</button>
+		<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/01-full.jpg" class="modal-images">
+      	<button name="close">CLOSE PROJECT</button>
 		
     </div>
--->
+
+	<div class="modal">
+		
+        <h2>Explore</h2>
+		<p><em>Graphic Design</em></p>
+		<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/02-full.jpg" class="modal-images">
+      	<button name="close">CLOSE PROJECT</button>
+		
+    </div>
+	
+	<div class="modal">
+		
+        <h2>Finish</h2>
+		<p><em>Identity</em></p>
+		<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/03-full.jpg" class="modal-images">
+      	<button name="close">CLOSE PROJECT</button>
+		
+    </div>
+	
+	<div class="modal">
+		
+        <h2>Lines</h2>
+		<p><em>Branding</em></p>
+		<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/04-full.jpg" class="modal-images">
+      	<button name="close">CLOSE PROJECT</button>
+		
+    </div>
+	
+	<div class="modal">
+		
+        <h2>Southwest</h2>
+		<p><em>Website Design</em></p>
+		<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/05-full.jpg" class="modal-images">
+      	<button name="close">CLOSE PROJECT</button>
+		
+    </div>
+	
+	<div class="modal">
+		
+        <h2>Window</h2>
+		<p><em>Photography</em></p>
+		<img src="https://fit-front-end-course.s3.amazonaws.com/portfolio/06-full.jpg" class="modal-images">
+      	<button name="close">CLOSE PROJECT</button>
+		
+    </div>
 	
 	<script>
+		//modals
 		
-		//var project = document.getElementsByClassName('image-container')
+		var project = document.getElementsByClassName('image-container')
+		var modal = document.getElementsByClassName('modal')
 		  
-		//project.addEventListener('click',function(){
-		//	console.log('test')
-			
-		//})
+		project[0].addEventListener('click',function(){
+			//console.log('test')
+			modal[0].classList.add('modal_on')
+		})
 		
-		window.onload = function (){
+		project[1].addEventListener('click',function(){
+			//console.log('test')
+			modal[1].classList.add('modal_on')
+		})
 		
-		var modal = document.getElementById('modal')
+		project[2].addEventListener('click',function(){
+			//console.log('test')
+			modal[2].classList.add('modal_on')
+		})
+		
+		project[3].addEventListener('click',function(){
+			//console.log('test')
+			modal[3].classList.add('modal_on')
+		})
+		
+		project[4].addEventListener('click',function(){
+			//console.log('test')
+			modal[4].classList.add('modal_on')
+		})
+		
+		project[5].addEventListener('click',function(){
+			//console.log('test')
+			modal[5].classList.add('modal_on')
+		})
+		
+		
+		//close buttons
+		
 		var closeBtn = document.getElementsByName('close')
-								
-			modal.classList.add('modal_on')
-		}
 			  
-			  closeBtn[0].addEventListener('click',function (){
-				  modal.classList.remove('modal_on')
+		  closeBtn[0].addEventListener('click',function (){
+			  modal[0].classList.remove('modal_on')
 				 
 			  })
 		 
+		closeBtn[1].addEventListener('click',function (){
+			  modal[1].classList.remove('modal_on')
+				 
+			  })
+		
+		closeBtn[2].addEventListener('click',function (){
+			  modal[2].classList.remove('modal_on')
+				 
+			  })
+		
+		closeBtn[3].addEventListener('click',function (){
+			  modal[3].classList.remove('modal_on')
+				 
+			  })
+		
+		closeBtn[4].addEventListener('click',function (){
+			  modal[4].classList.remove('modal_on')
+				 
+			  })
+		
+		closeBtn[5].addEventListener('click',function (){
+			  modal[5].classList.remove('modal_on')
+				 
+			  })
 		
 		
 		
