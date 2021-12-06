@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+html {
+	background-color:#FFFFFF;
+}
+
 body {
 	/*margin:0 auto;
 	max-width: 960px;*/
@@ -32,6 +36,10 @@ header nav a {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #FFFFFF;
+}
+
+header nav a:hover {
+	color: #fed136;
 }
 
 header nav ul {
@@ -75,7 +83,7 @@ footer {
 	margin:0 auto;
 	justify-content:space-between;
 	/*max-width: 960px;*/
-	/*height:60px;*/
+	height:60px;
 	border-top: 2px solid black;
 	padding-bottom: 10px;
 	background-color: #FFFFFF;
@@ -187,6 +195,10 @@ button {
 	border:none;
 }
 
+button:hover {
+	background-color: #E2BB35;
+}
+
 .team-photos {
 	border-radius: 50%;
 	max-width:200px;
@@ -208,13 +220,30 @@ button {
 
 .portfolio-images {
 	max-width: 300px;
+	/*position:relative;
+	z-index:0;*/
+}
+
+.portfolio-images:hover {
+	opacity: 10%;	
 }
 
 .image-container {
 	height:225px;
+	margin: 0 auto;
 }
 
+.image-hover {
+	/*position: absolute;
+	z-index:5;*/
+	background-color: #fed136;
+	height:225px;
+}
 
+.material-icons {
+	color: #FFFFFF;
+	text-align: center;
+}
 
 #modal {
   position:fixed;
@@ -239,22 +268,28 @@ button {
 
 main {
 	min-height:700px;
-	background-color: #BDBDBD;
+	background-color: #212529;
 	background-image:url(https://fit-front-end-course.s3.amazonaws.com/map-image.png)
 }
 
+main h2 {
+	color: #FFFFFF;
+	padding-top:100px;
+}
+
 form {
-	display:flex;
+	display: flex;
 	width:960px;
 	margin:0 auto;
+	padding-bottom: 20px;
 }
 
 .left {
-	max-width:460px;
+	max-width:470px;
 }
 
 .right {
-	max-width:460px;
+	max-width:470px;
 }
 
 input {
@@ -267,15 +302,15 @@ input {
 }
 
 .left-form {
-	padding:10px 253px 10px 20px;
+	padding:10px 283px 10px 20px;
 	height: 40px;
-	margin:5px;
+	margin:10px;
 }
 
 .right-form {
-	padding:10px 253px 10px 20px;
-	height: 100px;
-	margin:5px;
+	padding:10px 283px 174px 20px;
+	height: 40px;
+	margin:10px 0 10px 25px;
 }
 
 
