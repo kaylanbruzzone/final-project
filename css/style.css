@@ -288,13 +288,13 @@ button:hover {
 /*modal*/
 
 .modal {
-  position:absolute;
-  width:60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:80%;
+  height: 85%;
   padding:20px;
-  top:200px;
-  left:0;
-  right:0;
-  margin:0 auto;
   border-radius:20px;
   background-color:white;
   box-shadow:3px 3px 12px gray;
@@ -307,7 +307,7 @@ button:hover {
 }
 
 .modal-images {
-	max-height: 600px;
+	height: 60%;
 	padding: 20px 0 20px 0;
 }
 
@@ -598,6 +598,24 @@ input {
 
 	#yellow-circle-text {
 		display:none;
+	}
+	
+	
+	/* project page */
+	
+	.modal {
+		width:80%;
+		height: auto;
+		position: fixed;
+		top: 50%;
+	    left: 50%;
+  	    transform: translate(-50%, -50%);
+	}
+	
+	.modal-images {
+		width:80%;
+		height:auto;
+		padding: 20px 0 20px 0;
 	}
 	
 	
